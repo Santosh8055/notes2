@@ -1,0 +1,94 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;  
+    background: #ededed  
+}
+body, textArea, button{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;    
+    color: #333;    
+}
+textArea:focus{
+    outline: none;
+}
+
+.notes-container{
+    padding:5px;
+}
+.note-container{    
+    background: #ffffff;
+    padding : 2px;
+    background: gray;
+    margin: 5px 5px 0 0;
+    display: inline-block;
+}
+
+.note-body{
+    height: 100px;
+    width: 300px;        
+    background: white;  
+}
+.note-footer{    
+    width: 100%;    
+    text-align: right;
+    padding: 5px 0;
+}
+.note-edit-area{
+    width: 294px;
+    height: 91px;
+}
+/*.btn {
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 5px;  
+}
+.success {background-color: #4CAF50;} 
+.primary {background-color: #008CBA;} 
+.danger {background-color: #f44336;} 
+.default {background-color: #ffffff; color: black;}  
+.button5 {background-color: #555555;} */
+.btn {
+    position: relative;    
+    border: 1px solid black;    
+    background: white;    
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;    
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 5px;  
+    padding: 5px;
+}
+
+.btn:after {
+    content: "";
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.btn:hover:after {
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.btn:focus {
+    outline: none;
+}
+.success {border-color: #4CAF50;color:#4CAF50} 
+.primary {border-color: #008CBA;color:#008CBA} 
+.danger {border-color: #f44336;color:#f44336} 
+.default {
+    border-color: #ffffff; 
+    color: black;background: #f5f5f5;
+    } 
